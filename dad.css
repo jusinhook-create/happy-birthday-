@@ -1,0 +1,166 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+::-webkit-scrollbar{
+  display: none;
+}
+
+    .envelope{
+      width: 100px;
+      height: 50px;
+      margin-top: 0px;
+      margin-right: 0px;
+      
+    }
+
+    .greetings{
+      margin: 50px 500px;
+    }
+
+    .header{
+      display: flex;
+      flex-direction: column;
+      gap: 100px;
+    }
+
+    .letter{
+      font-family: 'Georgia', serif;
+      width: 500px;
+      margin-left: -30rem;
+    }
+
+    .link {
+      font-family: 'Georgia', serif;
+      background: linear-gradient(135deg, #ffe6e6, #fff2e6);
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 250px 500px;
+      margin-top: -260px;
+      display: none;
+      
+    }
+    .card {
+      background: white;
+      border-radius: 15px;
+      padding: 30px;
+      max-width: 500px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+      text-align: center;
+      border-top: 10px solid #ff6b6b;
+    }
+    .wish {
+      display: none;
+      padding: 20px;
+      background: #fff9f9;
+      border-radius: 8px;
+      margin: 15px 0;
+      border-left: 4px solid #ff6b6b;
+    }
+    .wish.active {
+      display: block;
+    }
+
+    #action-btn {
+      background: none;
+      color: white;
+      border: none;
+      margin-top: 50px;
+    }
+
+    .button {
+      background: #ff6b6b;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+      margin: 5px;
+      font-size: 16px;
+    }
+    h1 {
+      color: #d63384;
+    }
+
+    .flap{
+      margin: center;
+      margin-left: 650px;
+      margin-right: 650px;
+      margin-bottom: 10px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    span{
+      font-family: 'Georgia', serif;
+      color: #d63384;
+      font-weight: bold;
+      margin-left: -50rem;
+    }
+
+/* Tablet styles */
+@media (max-width: 1024px) {
+    .greetings {
+        margin: 30px 100px;
+    }
+    .letter {
+        width: 100%;
+        max-width: 500px;
+        margin-left: 0;
+    }
+    .link {
+        padding: 550px 100px;
+        margin-top: -220px;
+    }
+    .card {
+        max-width: 100%;
+        padding: 20px;
+    }
+    .flap {
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+    span {
+        margin-left: 0;
+    }
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+    .greetings {
+        margin: 20px 20px;
+    }
+    .letter {
+        width: 100%;
+        margin-left: 0;
+        font-size: 1.5em;
+    }
+    .link {
+        padding: 50px 20px;
+        margin-top: -50px;
+    }
+    .card {
+        max-width: 100%;
+        padding: 15px;
+    }
+    .button {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+    .flap {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    span {
+        margin-left: 0;
+        font-size: 0.9em;
+    }
+    .header {
+        gap: 50px;
+    }
+}

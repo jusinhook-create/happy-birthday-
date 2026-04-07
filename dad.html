@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Birthday Wishes for Dad</title>
+  <link rel="stylesheet" href="dad.css">
+</head>
+
+<body>
+  <div class="header">
+  <div class="greetings">
+  <div class="flap">
+    <h1 class="letter" id="text">A letter to you</h1>
+    <span id="text2">Click to open⬇️</span>
+  </div>
+  <div class="envelope">
+
+    <button id="action-btn" onclick="showElement()"> <div class="imgs"> <img src="ww1.jpg"></div></button>
+
+  </div>
+  </div>
+
+  <div class="link" id="myContent">
+    <div class="card">
+      <h1>🎂 Happy Birthday, dad! 🎂</h1>
+      <p>Click to reveal your three special wishes:</p>
+
+      <button class="button" onclick="showWish(1)">Wish 1</button>
+      <button class="button" onclick="showWish(2)">Wish 2</button>
+      <button class="button" onclick="showWish(3)">Wish 3</button>
+
+      <div id="wish1" class="wish">
+        <h2>For Joy</h2>
+        <p>Dear Dad, may your birthday sparkle with moments of love, laughter, and goodwill. May the year ahead be
+          filled with the brightest of opportunities!</p>
+      </div>
+
+      <div id="wish2" class="wish">
+        <h2>For Wisdom</h2>
+        <p>Dear Dad, may you continue to inspire us with your wisdom and grace. May life bring you the best of
+          everything you truly deserve.</p>
+      </div>
+
+      <div id="wish3" class="wish">
+        <h2>For Dreams</h2>
+        <p>Dear Dad, may all your dreams take flight and your aspirations be realized. May you always find reasons to
+          celebrate life!</p>
+      </div>
+
+      <p style="margin-top: 20px; font-style: italic;">With all my love on your special day, Dad!</p>
+    </div>
+</div>
+    <script>
+      function showWish(number) {
+        // Hide all wishes
+        document.querySelectorAll('.wish').forEach(wish => {
+          wish.classList.remove('active');
+        });
+
+        // Show selected wish
+        document.getElementById('wish' + number).classList.add('active');
+      }
+    </script>
+    <script>
+       const btn = document.getElementById('action-btn');
+  const obj = document.getElementById('myContent');
+  const text = document.getElementById('text');
+  const text2 = document.getElementById('text2');
+
+
+  btn.onclick = function() {
+    // 1. Show the object immediately
+    obj.style.display = 'block';
+
+    // 2. Wait 1 second (1000ms) then hide the button
+    setTimeout(() => {
+      btn.style.display = 'none';
+    }, 100); 
+    text.style.display = 'none';
+    text2.style.display = 'none';
+
+  };
+
+    </script>
+  </div>
+
+
+</body>
+
+</html>
